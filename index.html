@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-
-
-    <script src="main.js"></script>
+    <audio>
+        <source src="assets/alarm.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="container">
+        <form class="controls">
+          <button type="submit">Start</button>
+          <label>
+            <input type="text" class="time-input" />
+            sekund
+          </label>
+        </form>
+        <div class="alarm">
+          <div class="alarm__minutes"></div>
+          <div class="alarm__seconds">00</div>
+        </div>
+      </div>
+      <script src="main.js"></script>
 </body>
 </html>
